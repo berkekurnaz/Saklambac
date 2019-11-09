@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saklambac.NetFramework", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saklambac.NetCore", "Saklambac.NetCore\Saklambac.NetCore.csproj", "{AA7B4F10-2E15-486A-B235-25983656E756}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saklambac.TestNetFramework", "Saklambac.TestNetFramework\Saklambac.TestNetFramework.csproj", "{CE8A4980-A93C-4543-B33C-018FC19BB5B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saklambac.TestNetCore", "Saklambac.TestNetCore\Saklambac.TestNetCore.csproj", "{E517D046-8F7C-44F7-9FD0-5048C3B7E6E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{AA7B4F10-2E15-486A-B235-25983656E756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA7B4F10-2E15-486A-B235-25983656E756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA7B4F10-2E15-486A-B235-25983656E756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8A4980-A93C-4543-B33C-018FC19BB5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8A4980-A93C-4543-B33C-018FC19BB5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8A4980-A93C-4543-B33C-018FC19BB5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8A4980-A93C-4543-B33C-018FC19BB5B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E517D046-8F7C-44F7-9FD0-5048C3B7E6E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E517D046-8F7C-44F7-9FD0-5048C3B7E6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E517D046-8F7C-44F7-9FD0-5048C3B7E6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E517D046-8F7C-44F7-9FD0-5048C3B7E6E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

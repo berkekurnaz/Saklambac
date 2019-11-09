@@ -1,0 +1,7 @@
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\bin\Debug\Saklambac.TestNetFramework.exe.config
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\bin\Debug\Saklambac.TestNetFramework.exe
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\bin\Debug\Saklambac.TestNetFramework.pdb
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\obj\Debug\Saklambac.TestNetFramework.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\obj\Debug\Saklambac.TestNetFramework.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\obj\Debug\Saklambac.TestNetFramework.exe
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\obj\Debug\Saklambac.TestNetFramework.pdb

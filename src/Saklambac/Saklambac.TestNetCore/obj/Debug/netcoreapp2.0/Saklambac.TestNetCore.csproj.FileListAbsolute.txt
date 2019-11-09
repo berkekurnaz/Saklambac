@@ -1,0 +1,11 @@
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\bin\Debug\netcoreapp2.0\Saklambac.TestNetCore.deps.json
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\bin\Debug\netcoreapp2.0\Saklambac.TestNetCore.runtimeconfig.json
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\bin\Debug\netcoreapp2.0\Saklambac.TestNetCore.runtimeconfig.dev.json
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\bin\Debug\netcoreapp2.0\Saklambac.TestNetCore.dll
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\bin\Debug\netcoreapp2.0\Saklambac.TestNetCore.pdb
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.AssemblyInfoInputs.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.AssemblyInfo.cs
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.dll
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.pdb
