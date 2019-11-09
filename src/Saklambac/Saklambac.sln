@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saklambac.NetFramework", "Saklambac.NetFramework\Saklambac.NetFramework.csproj", "{9D429B92-4BE2-47AD-B800-CE2B7AB19350}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saklambac.NetCore", "Saklambac.NetCore\Saklambac.NetCore.csproj", "{AA7B4F10-2E15-486A-B235-25983656E756}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9D429B92-4BE2-47AD-B800-CE2B7AB19350}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D429B92-4BE2-47AD-B800-CE2B7AB19350}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D429B92-4BE2-47AD-B800-CE2B7AB19350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7B4F10-2E15-486A-B235-25983656E756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7B4F10-2E15-486A-B235-25983656E756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7B4F10-2E15-486A-B235-25983656E756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7B4F10-2E15-486A-B235-25983656E756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
