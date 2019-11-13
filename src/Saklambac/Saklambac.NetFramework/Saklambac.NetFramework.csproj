@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Abstract\ISaklambacDb.cs" />
     <Compile Include="Database\SaklambacDb.cs" />
+    <Compile Include="Database\TextDb\SaklambacTextDb.cs" />
     <Compile Include="Helpers\ConvertValueType.cs" />
     <Compile Include="Helpers\CreateFolder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

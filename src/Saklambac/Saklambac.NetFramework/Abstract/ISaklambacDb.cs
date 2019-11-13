@@ -14,7 +14,7 @@ namespace Saklambac.NetFramework.Abstract
         T GetOneById(string Id);
         T GetOneWithExpression(Func<T, bool> filter);
 
-        string Add(T model);
+        int Add(T model);
 
         int Update(T oldModel, T newModel);
 

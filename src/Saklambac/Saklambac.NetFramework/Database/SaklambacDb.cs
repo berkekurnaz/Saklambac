@@ -1,4 +1,5 @@
 ﻿using Saklambac.NetFramework.Abstract;
+using Saklambac.NetFramework.Database.TextDb;
 using Saklambac.NetFramework.Helpers;
 using System;
 using System.Collections.Generic;
@@ -39,27 +40,18 @@ namespace Saklambac.NetFramework.Database
 
 
         /* Add Operation To Saklambac TextDb */
-        public string Add(T model)
+        public int Add(T model)
         {
-            string document_path = @"SaklambacDb/TextDb/" + model.GetType().Name + ".txt";
-
-            string addText = "";
-            foreach (var item in model.GetType().GetProperties())
+            if (dbType == DbType.text)
             {
-                if (addText.Length == 0)
-                {
-                    addText = addText + item.GetValue(model);
-                }
-                else
-                {
-                    addText = addText + "," + item.GetValue(model);
-                }
+                SaklambacTextDb<T> db = new SaklambacTextDb<T>();
+                db.Add(model);
             }
-            StreamWriter sw = File.AppendText(document_path);
-            sw.WriteLine(addText);
-            sw.Flush();
-            sw.Close();
-            return addText;
+            else if (dbType == DbType.json)
+            {
+                // Json Operations Will Be Here.
+            }
+            return 1;
         }
 
 
@@ -67,18 +59,15 @@ namespace Saklambac.NetFramework.Database
         /* Delete Operation To Saklambac TextDb */
         public int Delete(T model)
         {
-            string document_path = @"SaklambacDb/TextDb/" + model.GetType().Name + ".txt";
-
-            List<T> data = new List<T>();
-            data = this.GetAll();
-            var a = model.GetType().GetProperties()[0].GetValue(model);
-
-            int index = data.FindIndex(x => x.GetType().GetProperties()[0].GetValue(x).ToString() == model.GetType().GetProperties()[0].GetValue(model).ToString());
-
-            var file = new List<string>(File.ReadAllLines(document_path));
-            file.RemoveAt(index);
-            File.WriteAllLines(document_path, file.ToArray());
-
+            if (dbType == DbType.text)
+            {
+                SaklambacTextDb<T> db = new SaklambacTextDb<T>();
+                db.Delete(model);
+            }
+            else if (dbType == DbType.json)
+            {
+                // Json Operations Will Be Here.
+            }
             return 1;
         }
 
@@ -87,34 +76,16 @@ namespace Saklambac.NetFramework.Database
         /* GetAll Operation To Saklambac TextDb */
         public List<T> GetAll(Func<T, bool> filter = null)
         {
-            string document_path = @"SaklambacDb/TextDb/Note.txt";
-
             List<T> data = new List<T>();
-            FileStream fs = new FileStream(document_path, FileMode.Open, FileAccess.Read);
-            StreamReader sw = new StreamReader(fs);
-            string line = sw.ReadLine();
-            while (line != null)
+            if (dbType == DbType.text)
             {
-                string[] splitLine = line.Split(',');
-                T model = new T();
-                int splitCount = 0;
-                for (int i = 0; i < model.GetType().GetProperties().Count(); i++)
-                {
-                    model.GetType().GetProperties()[i].SetValue(model, ConvertValueType.ConvertObject(splitLine[splitCount], model.GetType().GetProperties()[i].PropertyType.ToString()));
-                    splitCount++;
-                }
-                data.Add(model);
-
-                line = sw.ReadLine();
+                SaklambacTextDb<T> db = new SaklambacTextDb<T>();
+                data = db.GetAll(filter);
             }
-
-            if (filter != null)
+            else if (dbType == DbType.json)
             {
-                data = data.Where(filter).ToList();
+                // Json Operations Will Be Here.
             }
-
-            sw.Close();
-            fs.Close();
             return data;
         }
 
@@ -123,10 +94,17 @@ namespace Saklambac.NetFramework.Database
         /* GetOneById Operation To Saklambac TextDb */
         public T GetOneById(string Id)
         {
-            List<T> data = new List<T>();
-            data = this.GetAll();
-            T findData = data.Find(x => x.GetType().GetProperties()[0].GetValue(x).ToString() == Id);
-            return findData;
+            T data = new T();
+            if (dbType == DbType.text)
+            {
+                SaklambacTextDb<T> db = new SaklambacTextDb<T>();
+                data = db.GetOneById(Id);
+            }
+            else if (dbType == DbType.json)
+            {
+                // Json Operations Will Be Here.
+            }
+            return data;
         }
 
 
@@ -134,10 +112,17 @@ namespace Saklambac.NetFramework.Database
         /* GetOneWithExpression Operation To Saklambac TextDb */
         public T GetOneWithExpression(Func<T, bool> filter)
         {
-            List<T> data = new List<T>();
-            data = this.GetAll();
-            T findData = data.Where(filter).FirstOrDefault();
-            return findData;
+            T data = new T();
+            if (dbType == DbType.text)
+            {
+                SaklambacTextDb<T> db = new SaklambacTextDb<T>();
+                data = db.GetOneWithExpression(filter);
+            }
+            else if (dbType == DbType.json)
+            {
+                // Json Operations Will Be Here.
+            }
+            return data;
         }
 
 
@@ -145,42 +130,15 @@ namespace Saklambac.NetFramework.Database
         /* Update Operation To Saklambac TextDb */
         public int Update(T oldModel, T newModel)
         {
-            string document_path = @"SaklambacDb/TextDb/" + newModel.GetType().Name + ".txt";
-
-            List<T> data = new List<T>();
-            data = this.GetAll();
-
-            string oldData = "";
-            foreach (var item in oldModel.GetType().GetProperties())
+            if (dbType == DbType.text)
             {
-                if (oldData.Length == 0)
-                {
-                    oldData = oldData + item.GetValue(oldModel);
-                }
-                else
-                {
-                    oldData = oldData + "," + item.GetValue(oldModel);
-                }
+                SaklambacTextDb<T> db = new SaklambacTextDb<T>();
+                db.Update(oldModel, newModel);
             }
-
-            string newData = "";
-            foreach (var item in newModel.GetType().GetProperties())
+            else if (dbType == DbType.json)
             {
-                if (newData.Length == 0)
-                {
-                    newData = oldModel.GetType().GetProperties()[0].GetValue(oldModel).ToString();
-                    newData = newData + item.GetValue(newModel);
-                }
-                else
-                {
-                    newData = newData + "," + item.GetValue(newModel);
-                }
+                // Json Operations Will Be Here.
             }
-
-            string text = File.ReadAllText(document_path);
-            text = text.Replace(oldData, newData);
-            File.WriteAllText(document_path, text);
-
             return 1;
         }
 
