@@ -8,3 +8,4 @@ D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.AssemblyInfo.cs
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.dll
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.pdb
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.csprojAssemblyReference.cache

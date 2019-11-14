@@ -1,3 +1,9 @@
-dewlfewqfwel,Okula Git,Yarın Okul Ödevini Yapmayı Unutma...,False
-senbir,Bunu Güncelledim.,Bu İçeriği Güncelledim.,False
-gititm,Ydqewp,Yarın Okul Ödevini Yapmayı Unutma...,False
+Test Id,Test Etme2,Test Challenge2,True
+Test Id,Test Etme2,Test Challenge2,True
+Test Id,Test Etme2,Test Challenge2,True
+c5e0v1f3yjiv4sl9psmh,Test Etme2,Test Challenge2,True
+c1s24hh2uoeyb7d9upri,Test Etme2,Test Challenge2,True
+l4gy21ymj0fmumfk7m16,Test Etme2,Test Challenge2,True
+ajtto1g0m8uft4m2aafk,Test Etme2,Test Challenge2,True
+ldnhs5jvvcl3phmdo56s,Test Etme2,Test Challenge2,True
+0g7ceyzd8ce1fu8ieja8dede,Update Tests,test,True

@@ -1,4 +1,5 @@
-﻿using Saklambac.NetFramework.Helpers;
+﻿using Saklambac.NetFramework.Abstract;
+using Saklambac.NetFramework.Helpers;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Saklambac.NetFramework.Database.TextDb
 {
-    public class SaklambacTextDb<T> where T : class, new()
+    public class SaklambacTextDb<T> : ISaklambacDb<T> where T : class, new()
     {
 
 
@@ -25,7 +26,7 @@ namespace Saklambac.NetFramework.Database.TextDb
                 {
                     if (addText.Length == 0)
                     {
-                        addText = addText + item.GetValue(model);
+                        addText = addText + CreateIdKey.GetIdKey();
                     }
                     else
                     {
@@ -80,7 +81,7 @@ namespace Saklambac.NetFramework.Database.TextDb
             List<T> data = new List<T>();
             try
             {
-                string document_path = @"SaklambacDb/TextDb/Note.txt";
+                string document_path = @"SaklambacDb/TextDb/" + data.GetType().GetGenericArguments()[0].Name + ".txt";
 
                 FileStream fs = new FileStream(document_path, FileMode.Open, FileAccess.Read);
                 StreamReader sw = new StreamReader(fs);
@@ -185,7 +186,6 @@ namespace Saklambac.NetFramework.Database.TextDb
                     if (newData.Length == 0)
                     {
                         newData = oldModel.GetType().GetProperties()[0].GetValue(oldModel).ToString();
-                        newData = newData + item.GetValue(newModel);
                     }
                     else
                     {
