@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Saklambac.NetFramework")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Easy And Fast Data Storage System For C#")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Kurnaz Teknoloji")]
 [assembly: AssemblyProduct("Saklambac.NetFramework")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]

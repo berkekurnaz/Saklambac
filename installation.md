@@ -1,2 +1,7 @@
 # Saklambac Installation
-Easy And Fast Data Storage System For C#
+This page describes the installation of the Saklambac package. </br>
+
+1-)  </br>
+2-)  </br>
+3-)  </br>
+

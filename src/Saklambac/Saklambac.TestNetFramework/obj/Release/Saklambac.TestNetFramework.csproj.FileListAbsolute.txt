@@ -1,0 +1,10 @@
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\bin\Release\Saklambac.TestNetFramework.exe.config
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\bin\Release\Saklambac.TestNetFramework.exe
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\bin\Release\Saklambac.TestNetFramework.pdb
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\bin\Release\Saklambac.NetFramework.dll
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\bin\Release\Saklambac.NetFramework.pdb
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\obj\Release\Saklambac.TestNetFramework.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\obj\Release\Saklambac.TestNetFramework.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\obj\Release\Saklambac.TestNetFramework.csproj.CopyComplete
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\obj\Release\Saklambac.TestNetFramework.exe
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetFramework\obj\Release\Saklambac.TestNetFramework.pdb

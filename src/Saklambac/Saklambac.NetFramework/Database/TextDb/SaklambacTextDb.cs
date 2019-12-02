@@ -30,7 +30,7 @@ namespace Saklambac.NetFramework.Database.TextDb
                     }
                     else
                     {
-                        addText = addText + "," + item.GetValue(model);
+                        addText = addText + "|--|" + item.GetValue(model);
                     }
                 }
                 StreamWriter sw = File.AppendText(document_path);
@@ -113,7 +113,8 @@ namespace Saklambac.NetFramework.Database.TextDb
                 string line = sw.ReadLine();
                 while (line != null)
                 {
-                    string[] splitLine = line.Split(',');
+                    //string[] splitLine = line.Split(',');
+                    string[] splitLine = line.Split(new[] { "|--|" }, StringSplitOptions.None);
                     T model = new T();
                     int splitCount = 0;
                     for (int i = 0; i < model.GetType().GetProperties().Count(); i++)
@@ -201,7 +202,7 @@ namespace Saklambac.NetFramework.Database.TextDb
                     }
                     else
                     {
-                        oldData = oldData + "," + item.GetValue(oldModel);
+                        oldData = oldData + "|--|" + item.GetValue(oldModel);
                     }
                 }
 
@@ -214,7 +215,7 @@ namespace Saklambac.NetFramework.Database.TextDb
                     }
                     else
                     {
-                        newData = newData + "," + item.GetValue(newModel);
+                        newData = newData + "|--|" + item.GetValue(newModel);
                     }
                 }
 

@@ -2,10 +2,22 @@
 Easy And Fast Data Storage System For C#
 
 
-## Download Saklambac
-The download link was not shared because we are still in beta. <br/>
+## Install Saklambac
+Saklambac For .Net Framework: </br>
+``` Install-Package Saklambac -Version 1.0.0 ``` </br>
 
-We hope to share it soon.
+Saklambac For .Net Core: </br>
+``` Install-Package Saklambac.Core -Version 1.0.0 ``` </br>
+
+## Download Saklambac
+You can download and install Saklambac by using the links below.</br>
+
+Saklambac For .Net Framework: </br>
+[Download For .Net Framework](https://www.nuget.org/packages/Saklambac) </br>
+
+Saklambac For .Net Core: </br>
+[Download For .Net Core](https://www.nuget.org/packages/Saklambac.Core/1.0.0) </br>
+
 
 ## How To Use Saklambac ?
 A quick example for storing and searching documents:
@@ -72,7 +84,8 @@ class Program
 | 4 | Movies App     | Asp.Net Mvc  | xx.xx.xxxx | Link Is Here |
 
 ## Documentation
-Test
+
+You can reach the document [here...](https://github.com/berkekurnaz/Saklambac/tree/master/docs)
 
 ## Where To Use ? 
 - Desktop Applications

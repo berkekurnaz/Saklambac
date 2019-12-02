@@ -1,0 +1,8 @@
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\bin\Release\netcoreapp2.0\Saklambac.NetCore.deps.json
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\bin\Release\netcoreapp2.0\Saklambac.NetCore.dll
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\bin\Release\netcoreapp2.0\Saklambac.NetCore.pdb
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Release\netcoreapp2.0\Saklambac.NetCore.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Release\netcoreapp2.0\Saklambac.NetCore.AssemblyInfoInputs.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Release\netcoreapp2.0\Saklambac.NetCore.AssemblyInfo.cs
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Release\netcoreapp2.0\Saklambac.NetCore.dll
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Release\netcoreapp2.0\Saklambac.NetCore.pdb

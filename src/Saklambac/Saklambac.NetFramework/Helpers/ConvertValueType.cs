@@ -34,6 +34,8 @@ namespace Saklambac.NetFramework.Helpers
                         return ulong.Parse(value);
                     case "System.Single":
                         return float.Parse(value);
+                    case "System.DateTime":
+                        return DateTime.Parse(value);
                     case "System.Double":
                         return double.Parse(value);
                     case "System.String":
