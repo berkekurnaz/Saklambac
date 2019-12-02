@@ -40,7 +40,6 @@ namespace Saklambac.TestNetFramework
                 Console.WriteLine(item.Id + "/" + item.Title + "/" + item.Description + "/" + item.isCompleted);
             }
 
-
             Console.ReadLine();
         }
     }

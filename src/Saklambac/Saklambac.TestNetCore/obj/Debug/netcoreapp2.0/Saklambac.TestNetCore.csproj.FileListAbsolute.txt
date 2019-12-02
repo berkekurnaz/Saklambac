@@ -9,3 +9,6 @@ D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.dll
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.pdb
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\bin\Debug\netcoreapp2.0\Saklambac.NetCore.dll
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\bin\Debug\netcoreapp2.0\Saklambac.NetCore.pdb
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.TestNetCore\obj\Debug\netcoreapp2.0\Saklambac.TestNetCore.csproj.CopyComplete

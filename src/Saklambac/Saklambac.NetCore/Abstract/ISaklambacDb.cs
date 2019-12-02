@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Saklambac.NetFramework.Abstract
+namespace Saklambac.NetCore.Abstract
 {
     public interface ISaklambacDb<T> where T : class, new()
     {

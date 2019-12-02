@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "Saklambac.TestNetCore/1.0.0": {
+        "dependencies": {
+          "Saklambac.NetCore": "1.0.0"
+        },
         "runtime": {
           "Saklambac.TestNetCore.dll": {}
+        }
+      },
+      "Saklambac.NetCore/1.0.0": {
+        "runtime": {
+          "Saklambac.NetCore.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Saklambac.TestNetCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Saklambac.NetCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

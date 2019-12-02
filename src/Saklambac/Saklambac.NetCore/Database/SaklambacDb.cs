@@ -1,17 +1,12 @@
-﻿using Saklambac.NetFramework.Abstract;
-using Saklambac.NetFramework.Database.TextDb;
-using Saklambac.NetFramework.Helpers;
+﻿using Saklambac.NetCore.Abstract;
+using Saklambac.NetCore.Database.TextDb;
+using Saklambac.NetCore.Helpers;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Saklambac.NetFramework.Database
+namespace Saklambac.NetCore.Database
 {
-
     public enum DbType { text, json };
 
     public class SaklambacDb<T> : ISaklambacDb<T> where T : class, new()
@@ -31,12 +26,12 @@ namespace Saklambac.NetFramework.Database
             {
                 CreateFolder.CreateForTextDb();
             }
-            else if(dbType == DbType.json)
+            else if (dbType == DbType.json)
             {
                 CreateFolder.CreateForJsonDb();
             }
         }
-        
+
 
 
         /* Add Operation To Saklambac TextDb */
@@ -158,7 +153,6 @@ namespace Saklambac.NetFramework.Database
             }
             return 1;
         }
-
 
 
     }

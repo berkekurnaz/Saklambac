@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Saklambac.NetCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Saklambac.NetCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Saklambac.NetCore.dll": {}
+        }
       }
     }
   },
@@ -656,11 +666,17 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Saklambac.NetCore/1.0.0": {
+      "type": "project",
+      "path": "../Saklambac.NetCore/Saklambac.NetCore.csproj",
+      "msbuildProject": "../Saklambac.NetCore/Saklambac.NetCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Saklambac.NetCore >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -692,7 +708,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\YazilimProjeleri2019\\Saklambac\\src\\Saklambac\\Saklambac.NetCore\\Saklambac.NetCore.csproj": {
+              "projectPath": "D:\\YazilimProjeleri2019\\Saklambac\\src\\Saklambac\\Saklambac.NetCore\\Saklambac.NetCore.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

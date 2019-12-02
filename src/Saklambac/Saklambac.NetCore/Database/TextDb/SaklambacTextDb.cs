@@ -1,13 +1,12 @@
-﻿using Saklambac.NetFramework.Abstract;
-using Saklambac.NetFramework.Helpers;
+﻿using Saklambac.NetCore.Abstract;
+using Saklambac.NetCore.Helpers;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Saklambac.NetFramework.Database.TextDb
+namespace Saklambac.NetCore.Database.TextDb
 {
     public class SaklambacTextDb<T> : ISaklambacDb<T> where T : class, new()
     {
@@ -172,7 +171,7 @@ namespace Saklambac.NetFramework.Database.TextDb
                 data = this.GetAll();
                 findData = data.Where(filter).FirstOrDefault();
             }
-            catch 
+            catch
             {
 
             }
