@@ -4,10 +4,10 @@ Easy And Fast Data Storage System For C#
 
 ## Install Saklambac
 Saklambac For .Net Framework: </br>
-``` Install-Package Saklambac -Version 1.0.0 ``` </br>
+``` Install-Package Saklambac -Version 1.0.1 ``` </br>
 
 Saklambac For .Net Core: </br>
-``` Install-Package Saklambac.Core -Version 1.0.0 ``` </br>
+``` Install-Package Saklambac.Core -Version 1.0.1 ``` </br>
 
 ## Download Saklambac
 You can download and install Saklambac by using the links below.</br>
@@ -16,7 +16,7 @@ Saklambac For .Net Framework: </br>
 [Download For .Net Framework](https://www.nuget.org/packages/Saklambac) </br>
 
 Saklambac For .Net Core: </br>
-[Download For .Net Core](https://www.nuget.org/packages/Saklambac.Core/1.0.0) </br>
+[Download For .Net Core](https://www.nuget.org/packages/Saklambac.Core) </br>
 
 
 ## How To Use Saklambac ?
