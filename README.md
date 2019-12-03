@@ -24,7 +24,7 @@ A quick example for storing and searching documents:
 ```C#
 public class Note
 {
-    public string Id { get; set; }
+    public string Id { get; set; } // Must be variable in the string named Id
     public string Title { get; set; }
     public string Description { get; set; }
     public bool isComplete { get; set; }
