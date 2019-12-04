@@ -1,6 +1,5 @@
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetFramework\bin\Release\Saklambac.NetFramework.dll
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetFramework\bin\Release\Saklambac.NetFramework.pdb
-D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetFramework\obj\Release\Saklambac.NetFramework.csprojAssemblyReference.cache
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetFramework\obj\Release\Saklambac.NetFramework.csproj.CoreCompileInputs.cache
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetFramework\obj\Release\Saklambac.NetFramework.dll
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetFramework\obj\Release\Saklambac.NetFramework.pdb

@@ -18,7 +18,7 @@ namespace Saklambac.NetCore.Database.TextDb
         {
             try
             {
-                string document_path = @"SaklambacDb/TextDb/" + model.GetType().Name + ".txt";
+                string document_path = AppDomain.CurrentDomain.BaseDirectory + "SaklambacDb/TextDb/" + model.GetType().Name + ".txt";
 
                 string addText = "";
                 foreach (var item in model.GetType().GetProperties())
@@ -52,7 +52,7 @@ namespace Saklambac.NetCore.Database.TextDb
         {
             try
             {
-                string document_path = @"SaklambacDb/TextDb/" + model.GetType().Name + ".txt";
+                string document_path = AppDomain.CurrentDomain.BaseDirectory + "SaklambacDb/TextDb/" + model.GetType().Name + ".txt";
 
                 List<T> data = new List<T>();
                 data = this.GetAll();
@@ -79,7 +79,7 @@ namespace Saklambac.NetCore.Database.TextDb
             List<T> data = new List<T>();
             try
             {
-                string document_path = @"SaklambacDb/TextDb/" + data.GetType().GetGenericArguments()[0].Name + ".txt";
+                string document_path = AppDomain.CurrentDomain.BaseDirectory + "SaklambacDb/TextDb/" + data.GetType().GetGenericArguments()[0].Name + ".txt";
 
                 data = this.GetAll();
 
@@ -105,7 +105,7 @@ namespace Saklambac.NetCore.Database.TextDb
             List<T> data = new List<T>();
             try
             {
-                string document_path = @"SaklambacDb/TextDb/" + data.GetType().GetGenericArguments()[0].Name + ".txt";
+                string document_path = AppDomain.CurrentDomain.BaseDirectory + "SaklambacDb/TextDb/" + data.GetType().GetGenericArguments()[0].Name + ".txt";
 
                 FileStream fs = new FileStream(document_path, FileMode.Open, FileAccess.Read);
                 StreamReader sw = new StreamReader(fs);
@@ -187,7 +187,7 @@ namespace Saklambac.NetCore.Database.TextDb
         {
             try
             {
-                string document_path = @"SaklambacDb/TextDb/" + newModel.GetType().Name + ".txt";
+                string document_path = AppDomain.CurrentDomain.BaseDirectory + "SaklambacDb/TextDb/" + newModel.GetType().Name + ".txt";
 
                 List<T> data = new List<T>();
                 data = this.GetAll();

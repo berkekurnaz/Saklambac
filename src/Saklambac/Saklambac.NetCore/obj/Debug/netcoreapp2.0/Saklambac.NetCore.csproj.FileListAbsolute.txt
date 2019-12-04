@@ -6,3 +6,4 @@ D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Debug\netc
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Debug\netcoreapp2.0\Saklambac.NetCore.AssemblyInfo.cs
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Debug\netcoreapp2.0\Saklambac.NetCore.dll
 D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Debug\netcoreapp2.0\Saklambac.NetCore.pdb
+D:\YazilimProjeleri2019\Saklambac\src\Saklambac\Saklambac.NetCore\obj\Debug\netcoreapp2.0\Saklambac.NetCore.csprojAssemblyReference.cache

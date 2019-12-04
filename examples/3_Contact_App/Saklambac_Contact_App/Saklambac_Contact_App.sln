@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saklambac_Contact_App", "Saklambac_Contact_App\Saklambac_Contact_App.csproj", "{D96B83F6-A3EB-42E6-900A-5F1AF5ED7387}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D96B83F6-A3EB-42E6-900A-5F1AF5ED7387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D96B83F6-A3EB-42E6-900A-5F1AF5ED7387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D96B83F6-A3EB-42E6-900A-5F1AF5ED7387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D96B83F6-A3EB-42E6-900A-5F1AF5ED7387}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BCC9D14-6173-4125-BD07-F8E775248F06}
+	EndGlobalSection
+EndGlobal

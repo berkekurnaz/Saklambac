@@ -1,0 +1,48 @@
+﻿@model Saklambac_Contact_App.Models.Contact
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="contact1">
+    <div class="container-contact1">
+        <div class="contact1-pic js-tilt" data-tilt>
+            <img src="~/Content/images/img-01.png" alt="IMG">
+        </div>
+
+        <form method="post" action="/Home/Index/" class="contact1-form validate-form">
+            <span class="contact1-form-title">
+                Get in touch
+            </span>
+
+            <div class="wrap-input1 validate-input" data-validate="Name is required">
+                <input class="input1" type="text" id="Name" name="Name" placeholder="Name">
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                <input class="input1" type="text" id="Email" name="Email" placeholder="Email">
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="wrap-input1 validate-input" data-validate="Subject is required">
+                <input class="input1" type="text" id="Subject" name="Subject" placeholder="Subject">
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="wrap-input1 validate-input" data-validate="Message is required">
+                <textarea class="input1" id="Message" name="Message" placeholder="Message"></textarea>
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="container-contact1-form-btn">
+                <button type="submit" class="contact1-form-btn">
+                    <span>
+                        Send Email
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+

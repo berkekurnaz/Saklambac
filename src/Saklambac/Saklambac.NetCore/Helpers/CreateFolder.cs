@@ -10,18 +10,18 @@ namespace Saklambac.NetCore.Helpers
 
         public static void CreateForTextDb()
         {
-            if (!Directory.Exists(@"SaklambacDb/TextDb"))
+            if (!Directory.Exists(AppDomain.CurrentDomain.BaseDirectory + "SaklambacDb/TextDb"))
             {
-                DirectoryInfo di = Directory.CreateDirectory(@"SaklambacDb/TextDb");
+                DirectoryInfo di = Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "SaklambacDb/TextDb");
                 di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
             }
         }
 
         public static void CreateForJsonDb()
         {
-            if (!Directory.Exists(@"SaklambacDb/JsonDb"))
+            if (!Directory.Exists(AppDomain.CurrentDomain.BaseDirectory + "SaklambacDb/JsonDb"))
             {
-                DirectoryInfo di = Directory.CreateDirectory(@"SaklambacDb/JsonDb");
+                DirectoryInfo di = Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "SaklambacDb/JsonDb");
                 di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
             }
         }
