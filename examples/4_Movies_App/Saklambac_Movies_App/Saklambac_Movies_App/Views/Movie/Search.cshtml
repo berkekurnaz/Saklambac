@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Saklambac_Movies_App.Models.Movie>
+@{
+    ViewBag.Title = "Search";
+}
+
+<div class="container">
+    <div class="Film-Section-1">
+        <h3 class="text-center">Search Movies</h3>
+        <p class="text-center">@Model.Count() Records Found.</p>
+        <hr />
+        <div class="row flex-column-reverse flex-md-row">
+            @foreach (var movie in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img" src="@movie.Photo" alt="Card image">
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">@movie.Name</h1>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 metadata">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <p>@movie.ImdbScore/10</p>
+                                    </div>
+                                    <div class="col-8 metadata">@movie.Category</div>
+                                </div>
+                            </div>
+                            <p class="card-text">@movie.Description</p>
+                            <a class="trailer-preview" href="/Movie/Detail/@movie.Id">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

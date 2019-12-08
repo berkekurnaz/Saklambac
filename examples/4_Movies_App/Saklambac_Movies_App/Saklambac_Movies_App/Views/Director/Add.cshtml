@@ -1,0 +1,28 @@
+﻿@model Saklambac_Movies_App.Models.Director
+@{
+    ViewBag.Title = "Add";
+}
+
+<div class="container col-md-5 text-center">
+    <form method="post" action="/Director/Add/">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="Name" name="Name" />
+        </div>
+        <div class="form-group">
+            <label>Score</label>
+            <input type="text" class="form-control" id="Score" name="Score" />
+        </div>
+        <div class="form-group">
+            <label>Birth Date</label>
+            <input type="text" class="form-control" id="BirthDate" name="BirthDate" />
+        </div>
+        <div class="form-group">
+            <label>Photo</label>
+            <input type="text" class="form-control" id="Photo" name="Photo" />
+        </div>
+
+        <button type="submit" class="btn btn-outline-info">Add New Director</button>
+    </form>
+</div>
+

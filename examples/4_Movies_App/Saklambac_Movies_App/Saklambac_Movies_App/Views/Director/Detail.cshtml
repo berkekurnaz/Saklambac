@@ -1,0 +1,23 @@
+﻿@model Saklambac_Movies_App.Models.Director
+@{
+    ViewBag.Title = "Detail";
+}
+
+<div class="container col-md-9 text-center">
+    <div class="row">
+        <div class="container col-md-4">
+            <img width="100%" src="@Model.Photo" />
+        </div>
+        <div class="container col-md-8">
+            <h4>@Model.Name</h4>
+            <hr />
+            <p>Imdb Score: @Model.Score - Date: @Model.BirthDate</p>
+            <div class="container">
+                <a href="/Home/Directors/" class="btn btn-outline-info">Back</a>
+                <a href="/Director/Update/@Model.Id" class="btn btn-outline-success">Update</a>
+                <a href="/Director/Delete/@Model.Id" class="btn btn-outline-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+

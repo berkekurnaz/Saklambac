@@ -1,0 +1,40 @@
+﻿@model Saklambac_Movies_App.Models.Movie
+@{
+    ViewBag.Title = "Update";
+}
+
+<div class="container col-md-5 text-center">
+    <form  method="post" action="/Movie/Update/">
+        <div class="form-group">
+            <label>Id</label>
+            <input type="text" class="form-control" id="Id" name="Id" value="@Model.Id" readonly/>
+        </div>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name" />
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" id="Description" name="Description" value="@Model.Description" />
+        </div>
+        <div class="form-group">
+            <label>Category</label>
+            <input type="text" class="form-control" id="Category" name="Category" value="@Model.Category" />
+        </div>
+        <div class="form-group">
+            <label>Imdb Score</label>
+            <input type="text" class="form-control" id="ImdbScore" name="ImdbScore" value="@Model.ImdbScore" />
+        </div>
+        <div class="form-group">
+            <label>Photo</label>
+            <input type="text" class="form-control" id="Photo" name="Photo" value="@Model.Photo" />
+        </div>
+        <div class="form-group">
+            <label>DirectorId</label>
+            <input type="text" class="form-control" id="DirectorId" name="DirectorId" value="@Model.DirectorId" />
+        </div>
+
+        <button type="submit" class="btn btn-outline-success">Update Movie</button>
+    </form>
+</div>
+

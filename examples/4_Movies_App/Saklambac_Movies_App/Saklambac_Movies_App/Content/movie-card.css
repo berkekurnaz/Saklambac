@@ -1,0 +1,106 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
+body {
+    background-color: #F8FAFB;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.col-md-5, .description {
+    padding: 0;
+}
+
+.description {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+}
+
+.card-header, .metadata {
+    background: none;
+    padding: 0;
+    position: relative;
+    border-style: none;
+}
+
+.metadata {
+    font-size: 16px;
+    i, p{
+    float: left;
+}
+
+p {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+i {
+    color: #ff9d00;
+    margin-top: 5px;
+    margin-left: 1px;
+}
+
+}
+
+.card-img {
+    -webkit-clip-path: inset(10% 0 20% 0);
+    clip-path: inset(10% 0 20% 0);
+    margin-top: -15%;
+}
+
+.card-body {
+    position: relative;
+    margin-top: -30%;
+    color: #9FA7A9;
+    .card-title{
+    font-weight: 600;
+    color: #414345;
+}
+
+.card-text {
+    margin-top: 8px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+}
+
+.card, .trailer-preview {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    &:hover
+
+{
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10), 0 8px 8px rgba(0, 0, 0, 0.18);
+}
+
+}
+
+.card {
+    border-radius: 8pt;
+    border-style: none;
+    overflow: hidden;
+    transform: scale(0.8);
+    margin-top: -60px;
+}
+
+.trailer-preview {
+    background-color: #ff3d49;
+    position: absolute;
+    top: -46px;
+    right: 24px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 13px;
+    &:hover, &:disabled, &:active, &:focus{
+    background-color: #ff3d49;
+    color: white;
+}
+
+i {
+    margin-left: 5px;
+}
+}
