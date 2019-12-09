@@ -1,0 +1,51 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<style>
+    hr {
+        width: 50%;
+    }
+
+    .myHeader {
+        padding: 20px;
+        border: 1px solid #7F8C8D;
+        box-shadow: 3px 3px 3px #aaaaaa;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .blogCard {
+        text-align: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+        .blogCard .card {
+            width: 100%;
+        }
+
+    .myHeader img {
+        object-fit: cover;
+        height: 300px;
+        width: 50%;
+        margin: 0 auto;
+    }
+</style>
+
+
+<div class="myHeader text-center">
+    <h2>@Model.Title</h2>
+    <hr />
+    <p>Author: @Model.Author - Date: @Model.CreatedDate</p>
+</div>
+
+<div class="myHeader text-center">
+    <img src="@Model.Photo" class="card-img-top">
+</div>
+
+<div class="myHeader text-center">
+    <p>@Model.Description</p>
+</div>

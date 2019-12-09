@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Blog>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="card shadow mb-4 text-center">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Blog Posts</h6>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var blog in Model)
+                {
+                    <tr>
+                        <td>@blog.Title</td>
+                        <td>@blog.CreatedDate</td>
+                        <td>@blog.Author</td>
+                        <td>
+                            <a href="/Admin/Update/@blog.Id" class="btn btn-outline-success"><i class="fa fa-wrench" aria-hidden="true"></i> Update</a>
+                            <a href="/Admin/Delete/@blog.Id" class="btn btn-outline-danger"><i class="fa fa-times" aria-hidden="true"></i> Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

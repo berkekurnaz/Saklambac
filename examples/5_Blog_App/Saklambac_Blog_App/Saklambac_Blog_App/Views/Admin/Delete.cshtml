@@ -1,0 +1,50 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="card shadow mb-4 text-center">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Delete Blog Post</h6>
+    </div>
+    <div class="card-body">
+        <div class="container col-md-6">
+            <form method="post" action="/Admin/Delete/">
+
+                <div class="form-group">
+                    <label>Id</label>
+                    <input type="text" class="form-control" asp-for="Id" value="@Model.Id" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" asp-for="Title" value="@Model.Title" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Author</label>
+                    <input type="text" class="form-control" asp-for="Author" value="@Model.Author" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>CreatedDate</label>
+                    <input type="text" class="form-control" asp-for="CreatedDate" value="@Model.CreatedDate" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Photo</label>
+                    <input type="text" class="form-control" asp-for="Photo" value="@Model.Photo" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" asp-for="Description" rows="8" readonly>@Model.Description</textarea>
+                </div>
+
+                <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> Delete Blog Post</button>
+            </form>
+        </div>
+    </div>
+</div>
+

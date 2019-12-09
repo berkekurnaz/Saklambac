@@ -1,0 +1,45 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="card shadow mb-4 text-center">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Add New Blog Post</h6>
+    </div>
+    <div class="card-body">
+        <div class="container col-md-6">
+            <form method="post" action="/Admin/Add/"> 
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" asp-for="Title" placeholder="Enter Title" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Author</label>
+                    <input type="text" class="form-control" asp-for="Author" placeholder="Enter Author" required>
+                </div>
+
+                <div class="form-group">
+                    <label>CreatedDate</label>
+                    <input type="text" class="form-control" asp-for="CreatedDate" value="@DateTime.Now.ToShortDateString()" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Photo</label>
+                    <input type="text" class="form-control" asp-for="Photo" placeholder="Enter Photo Url" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" placeholder="Enter Description" asp-for="Description" rows="8" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Add New Blog Post</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

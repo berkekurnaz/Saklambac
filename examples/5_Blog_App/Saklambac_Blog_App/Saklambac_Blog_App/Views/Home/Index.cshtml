@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Blog>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<style>
+    hr{
+        width: 50%;
+    }
+    .myHeader {
+        padding: 20px;
+        border: 1px solid #7F8C8D;
+        box-shadow: 3px 3px 3px #aaaaaa;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .blogCard  {
+        text-align:center;
+        margin: 0 auto;
+        width: 60%;
+    }
+        .blogCard .card {
+            width: 100%;
+        }
+        .blogCard img {
+            object-fit: cover;
+            height: 300px;
+        }
+</style>
+
+<div class="myHeader text-center">
+    <h2>Berke Kurnaz</h2>
+    <hr />
+    <p>Welcome To My Blog. You can read my blog posts here. Have fun.</p>
+    <a href="/Admin/Index/" class="btn btn-outline-info">Go To Admin Panel</a>
+</div>
+
+<div class="blogCard">
+    @foreach (var blog in Model)
+    {
+    <div class="card">
+        <img src="@blog.Photo" class="card-img-top">
+        <div class="card-body">
+            <h3 class="card-title">@blog.Title</h3>
+            <p>Author: @blog.Author - Date: @blog.CreatedDate</p>
+            <a href="/Home/Detail/@blog.Id" class="btn btn-outline-info">Read Blog</a>
+        </div>
+    </div>
+    }
+</div>
+
+
